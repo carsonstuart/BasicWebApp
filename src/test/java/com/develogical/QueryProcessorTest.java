@@ -34,5 +34,20 @@ public class QueryProcessorTest {
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
+    
+    @Test
+    public void isNotCaseSensitive() throws Exception {
+        assertThat(queryProcessor.process("which of the following numbers is the largest: 66, 188"), containsString("188"));
+    }
+    
+    @Test
+    public void isNotCaseSensitive() throws Exception {
+        assertThat(queryProcessor.process("what color is a banana"), containsString("yellow"));
+    }
+    
+//     @Test
+//     public void isNotCaseSensitive() throws Exception {
+//         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
+//     }
 
 }
