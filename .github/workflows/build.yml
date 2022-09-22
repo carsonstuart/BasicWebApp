@@ -25,6 +25,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_api_key: "e5a27c09-3dfc-4833-b729-37bd9b7e004d"
           heroku_app_name: "carsonstuart"
           heroku_email: "cjstuart@andrew.cmu.edu"
